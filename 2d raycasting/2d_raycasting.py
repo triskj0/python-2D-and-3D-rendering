@@ -13,7 +13,7 @@ WIDTH = 1200
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("raycasting")
 
-FOV = 60
+FOV = math.pi*2 # field of view = 360°
 CASTED_RAYS = 150 # number of rays we're casting
 STEP_ANGLE = FOV/CASTED_RAYS # space between rays
 MAX_DEPTH = WIDTH # maximum length of a ray
